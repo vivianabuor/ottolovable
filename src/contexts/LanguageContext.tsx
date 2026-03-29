@@ -16,20 +16,20 @@ const translations: Record<string, Record<Lang, string>> = {
   "nav.cta": { en: "Get Otto", es: "Obtener Otto" },
 
   // Hero
-  "hero.title": { en: "Your morning briefing.\nBefore you even ask.", es: "Tu briefing matutino.\nAntes de que preguntes." },
-  "hero.subtitle": { en: "Otto is a WhatsApp-native personal co-pilot that knows your day — weather, traffic, calendar, finances — and delivers it proactively every morning.", es: "Otto es un copiloto personal nativo de WhatsApp que conoce tu día — clima, tráfico, calendario, finanzas — y lo entrega proactivamente cada mañana." },
-  "hero.cta": { en: "Save the number", es: "Guarda el número" },
+  "hero.title": { en: "Your day organized.\nBefore you even ask.", es: "Tu día organizado.\nAntes de que preguntes." },
+  "hero.subtitle": { en: "oπo is your personal copilot on WhatsApp. Weather, traffic, calendar, finances. All in one message, every morning, without you having to ask.", es: "oπo es tu copiloto personal en WhatsApp. Clima, tráfico, calendario y finanzas. Todo en un mensaje, cada mañana, sin que tengas que pedirlo." },
+  "hero.cta": { en: "Start", es: "Comienza" },
   "hero.noApp": { en: "No app to download. Just a number you save.", es: "Sin app que descargar. Solo un número que guardas." },
 
   // How it works
   "how.title": { en: "How it works", es: "Cómo funciona" },
   "how.subtitle": { en: "Three simple steps to start your day smarter", es: "Tres simples pasos para empezar tu día más inteligente" },
   "how.step1.title": { en: "Save the number", es: "Guarda el número" },
-  "how.step1.desc": { en: "Add Otto to your WhatsApp contacts. That's it — no downloads, no signups.", es: "Agrega a Otto a tus contactos de WhatsApp. Eso es todo — sin descargas, sin registros." },
-  "how.step2.title": { en: "Get your briefing", es: "Recibe tu briefing" },
+  "how.step1.desc": { en: "Add Otto to your WhatsApp contacts. That's it — no downloads, no signups.", es: "Agrega a Otto a tus contactos de WhatsApp. Eso es todo! sin descargas, sin registros." },
+  "how.step2.title": { en: "Get your summary", es: "Recibe tu resumen" },
   "how.step2.desc": { en: "Every morning, Otto sends you a personalized summary of your day ahead.", es: "Cada mañana, Otto te envía un resumen personalizado de tu día." },
   "how.step3.title": { en: "Reply to act", es: "Responde para actuar" },
-  "how.step3.desc": { en: "Need to reschedule? Check a route? Just reply — Otto handles it.", es: "¿Necesitas reprogramar? ¿Revisar una ruta? Solo responde — Otto se encarga." },
+  "how.step3.desc": { en: "Need to reschedule? Check a route? Just reply and Otto handles it.", es: "¿Necesitas reprogramar? ¿Revisar una ruta? Solo responde y Otto se encarga." },
 
   // Features
   "features.title": { en: "Everything you need.\nOne message.", es: "Todo lo que necesitas.\nUn mensaje." },
@@ -39,7 +39,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "features.traffic.title": { en: "Traffic", es: "Tráfico" },
   "features.traffic.desc": { en: "Know your commute time before you leave. Alternate routes included.", es: "Conoce tu tiempo de viaje antes de salir. Rutas alternativas incluidas." },
   "features.calendar.title": { en: "Calendar", es: "Calendario" },
-  "features.calendar.desc": { en: "Meetings, deadlines, birthdays — all in your morning message.", es: "Reuniones, plazos, cumpleaños — todo en tu mensaje matutino." },
+  "features.calendar.desc": { en: "Meetings, deadlines, birthdays. All in your morning message.", es: "Reuniones, plazos, cumpleaños. Todo en tu mensaje matutino." },
   "features.finances.title": { en: "Finances", es: "Finanzas" },
   "features.finances.desc": { en: "Daily spending snapshot and alerts so you stay on budget.", es: "Resumen diario de gastos y alertas para mantenerte en presupuesto." },
 
