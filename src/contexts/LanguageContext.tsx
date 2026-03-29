@@ -74,6 +74,18 @@ const translations: Record<string, Record<Lang, string>> = {
   "faq.q4": { en: "Can I customize what Otto sends me?", es: "¿Puedo personalizar lo que Otto me envía?" },
   "faq.a4": { en: "Yes! Just tell Otto what you care about and it adapts. You can adjust anytime via chat.", es: "¡Sí! Solo dile a Otto qué te interesa y se adapta. Puedes ajustar en cualquier momento por chat." },
 
+  // Early Access
+  "early.quote": { en: "Imagine waking up and someone brilliant already checked everything for you. That's oπo.", es: "Imagina despertar y que alguien brillante ya revisó todo por ti. Eso es oπo." },
+  "early.quoteSubtitle": { en: "The copilot your routine needed.", es: "El copiloto que tu rutina necesitaba." },
+  "early.badge": { en: "Early access — Limited spots", es: "Acceso anticipado — Cupos limitados" },
+  "early.headline.before": { en: "The first 500 users get in", es: "Los primeros 500 usuarios entran" },
+  "early.headline.highlight": { en: "free forever", es: "gratis para siempre" },
+  "early.urgency": { en: "Don't think about it too long. When spots run out, the price goes up.", es: "No lo pienses demasiado. Cuando se acaben los cupos, el precio sube." },
+  "early.stat1": { en: "spots taken", es: "cupos tomados" },
+  "early.stat2": { en: "free spots left", es: "lugares gratis restantes" },
+  "early.stat3": { en: "days it saves you", es: "días que te ahorra" },
+  "early.cta": { en: "Start here — I want my free spot", es: "Comenzar aquí — Quiero mi lugar gratis" },
+
   // Footer
   "footer.tagline": { en: "Your day, delivered.", es: "Tu día, entregado." },
   "footer.privacy": { en: "Privacy", es: "Privacidad" },
