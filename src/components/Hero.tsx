@@ -23,13 +23,15 @@ const Hero = () => {
               {t("hero.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="gradient-primary border-0 text-primary-foreground font-semibold text-base px-8 h-12 gap-2"
-              >
-                <MessageCircle size={18} />
-                {t("hero.cta")}
-              </Button>
+              <a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="gradient-primary border-0 text-primary-foreground font-semibold text-base px-8 h-12 gap-2"
+                >
+                  <MessageCircle size={18} />
+                  {t("hero.cta")}
+                </Button>
+              </a>
             </div>
             <p className="text-sm text-muted-foreground">
               {t("hero.noApp")}
