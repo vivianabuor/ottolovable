@@ -1,49 +1,32 @@
 
 
-## Build Plan: Otto Landing Page
+## Plan: Add Early Access Section + WhatsApp Link
 
-**Product**: Otto — WhatsApp-native personal co-pilot (weather, traffic, calendar, finances morning briefing)
-**Brand**: Name "Otto", primary color #e3237a (pink/magenta), dark theme inspired by GastoAI
-**Language**: Bilingual (English + Spanish toggle)
+### What's being added
 
-### Structure
+A new section before Pricing with two visual blocks (matching the uploaded screenshot):
 
-**1. Navbar** — Logo "Otto", nav links (How it works, Features, Pricing), language toggle (EN/ES), CTA button
+1. **Testimonial quote** — pink gradient background, large italic quote: "Imagina despertar y que alguien brillante ya revisó todo por ti. Eso es oπo." with subtitle "El copiloto que tu rutina necesitaba."
 
-**2. Hero Section** — Bold headline + subtitle, WhatsApp chat mockup showing a morning briefing message (weather, traffic, calendar, finances), CTA "Save the number" button, dark background with pink gradient accents
+2. **Early access urgency block** — light/white background with:
+   - "Acceso anticipado — Cupos limitados" badge
+   - Bold headline "Los primeros 500 usuarios entran gratis para siempre" (with "gratis para siempre" highlighted in pink/yellow)
+   - Urgency subtitle
+   - Stats row: 391 cupos tomados | 109 lugares gratis restantes | ∞ días que te ahorra
+   - WhatsApp CTA button: "Comenzar aquí — Quiero mi lugar gratis" linking to `https://wa.me/15556422389`
 
-**3. How It Works (3 steps)** — Save the number → Get your morning briefing → Reply to act. Numbered cards with icons, clean layout
+Also: Update the Hero "Start/Comienza" button to link to `https://wa.me/15556422389`.
 
-**4. Features Grid** — 4 cards: Weather, Traffic, Calendar, Finances. Each with icon, title, short description. Pink accent highlights
+### Files to change
 
-**5. Pricing & FAQ** — Pricing cards (free/pro tiers), FAQ accordion below
+1. **`src/components/EarlyAccess.tsx`** (new) — The two-block section with bilingual translations via `useLanguage`
+2. **`src/contexts/LanguageContext.tsx`** — Add translation keys for the new section
+3. **`src/pages/Index.tsx`** — Import and place `<EarlyAccess />` between `<Features />` and `<Pricing />`
+4. **`src/components/Hero.tsx`** — Make the CTA button an `<a>` linking to `https://wa.me/15556422389`
 
-**6. Footer** — Logo, links, social icons
-
-### Technical Approach
-
-- **Files**: Single `Index.tsx` page with section components in `src/components/` (Hero, HowItWorks, Features, Pricing, FAQ, Navbar, Footer)
-- **Styling**: Update CSS variables in `index.css` for dark theme with `#e3237a` as primary. Add custom gradients/glows via Tailwind config
-- **i18n**: Simple context-based language toggle (EN/ES) with a translations object — no external library needed
-- **Design tokens**:
-  - Background: ~`#0a0a0a` / `#111`
-  - Primary: `#e3237a` (HSL ~340 82% 52%)
-  - Text: white/gray tones
-  - Cards: subtle dark elevated surfaces with border glow
-- **Animations**: Subtle fade-in on scroll using CSS/intersection observer
-- **WhatsApp mockup**: CSS-built chat bubble component showing a sample Otto morning message
-
-### Files to Create/Edit
-- `src/index.css` — dark theme variables
-- `src/components/Navbar.tsx`
-- `src/components/Hero.tsx`
-- `src/components/HowItWorks.tsx`
-- `src/components/Features.tsx`
-- `src/components/Pricing.tsx`
-- `src/components/FAQ.tsx`
-- `src/components/Footer.tsx`
-- `src/components/WhatsAppMockup.tsx`
-- `src/contexts/LanguageContext.tsx`
-- `src/pages/Index.tsx` — compose all sections
-- `index.html` — update title/meta to "Otto"
+### Design approach
+- Testimonial block: gradient from primary pink to a lighter pink, white text, centered
+- Early access block: light background (contrasting with the dark theme — as shown in screenshot), dark text, centered layout
+- Stats use large bold numbers with small labels below
+- CTA is a full-width pink button with WhatsApp icon
 
