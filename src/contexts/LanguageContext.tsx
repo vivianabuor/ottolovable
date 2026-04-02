@@ -45,7 +45,7 @@ const translations: Record<string, Record<Lang, string>> = {
 
   // Pricing
   "pricing.title": { en: "Simple pricing", es: "Precios simples" },
-  "pricing.subtitle": { en: "Start free. Upgrade when you're ready.", es: "Empieza gratis. Mejora cuando estés listo." },
+  "pricing.subtitle": { en: "Start free for Early Birds", es: "Empieza gratis para Early Birds" },
   "pricing.free.name": { en: "Free", es: "Gratis" },
   "pricing.free.price": { en: "$0", es: "$0" },
   "pricing.free.period": { en: "/month", es: "/mes" },
@@ -79,7 +79,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "early.quoteSubtitle": { en: "The copilot your routine needed.", es: "El copiloto que tu rutina necesitaba." },
   "early.badge": { en: "Early access — Limited spots", es: "Acceso anticipado — Cupos limitados" },
   "early.headline.before": { en: "The first 500 users get in", es: "Los primeros 500 usuarios entran" },
-  "early.headline.highlight": { en: "free forever", es: "gratis para siempre" },
+  "early.headline.highlight": { en: "free", es: "gratis" },
   "early.urgency": { en: "Don't think about it too long. When spots run out, the price goes up.", es: "No lo pienses demasiado. Cuando se acaben los cupos, el precio sube." },
   "early.stat1": { en: "spots taken", es: "cupos tomados" },
   "early.stat2": { en: "free spots left", es: "lugares gratis restantes" },
