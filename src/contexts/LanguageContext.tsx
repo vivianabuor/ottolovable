@@ -68,7 +68,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "faq.q1": { en: "Do I need to download an app?", es: "¿Necesito descargar una app?" },
   "faq.a1": { en: "No! Otto works entirely through WhatsApp. Just save the number and you're ready.", es: "¡No! Otto funciona completamente a través de WhatsApp. Solo guarda el número y listo." },
   "faq.q2": { en: "How does Otto access my calendar?", es: "¿Cómo accede Otto a mi calendario?" },
-  "faq.a2": { en: "Otto connects securely to Google Calendar and Outlook. You authorize once and it stays synced.", es: "Otto se conecta de forma segura a Google Calendar y Outlook. Autorizas una vez y se mantiene sincronizado." },
+  "faq.a2": { en: "Otto connects securely to Google Calendar. You authorize once and it stays synced.", es: "Otto se conecta de forma segura a Google Calendar. Autorizas una vez y se mantiene sincronizado." },
   "faq.q3": { en: "Is my data safe?", es: "¿Mis datos están seguros?" },
   "faq.a3": { en: "Absolutely. We use end-to-end encryption and never store your messages. Your data is yours.", es: "Absolutamente. Usamos cifrado de extremo a extremo y nunca almacenamos tus mensajes. Tus datos son tuyos." },
   "faq.q4": { en: "Can I customize what Otto sends me?", es: "¿Puedo personalizar lo que Otto me envía?" },
