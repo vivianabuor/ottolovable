@@ -45,7 +45,7 @@ const translations: Record<string, Record<Lang, string>> = {
 
   // Pricing
   "pricing.title": { en: "Simple pricing", es: "Precios simples" },
-  "pricing.subtitle": { en: "Start free. Upgrade when you're ready.", es: "Empieza gratis. Mejora cuando estés listo." },
+  "pricing.subtitle": { en: "Start free for Early Birds", es: "Empieza gratis para Early Birds" },
   "pricing.free.name": { en: "Free", es: "Gratis" },
   "pricing.free.price": { en: "$0", es: "$0" },
   "pricing.free.period": { en: "/month", es: "/mes" },
