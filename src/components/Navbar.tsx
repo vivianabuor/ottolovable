@@ -42,9 +42,11 @@ const Navbar = () => {
           >
             {lang === "en" ? "ES" : "EN"}
           </button>
-          <Button size="sm" className="gradient-primary border-0 text-primary-foreground font-semibold">
-            {t("nav.cta")}
-          </Button>
+          <a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer">
+            <Button size="sm" className="gradient-primary border-0 text-primary-foreground font-semibold">
+              {t("nav.cta")}
+            </Button>
+          </a>
         </div>
 
         {/* Mobile toggle */}
