@@ -79,7 +79,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "early.quoteSubtitle": { en: "The copilot your routine needed.", es: "El copiloto que tu rutina necesitaba." },
   "early.badge": { en: "Early access — Limited spots", es: "Acceso anticipado — Cupos limitados" },
   "early.headline.before": { en: "The first 500 users get in", es: "Los primeros 500 usuarios entran" },
-  "early.headline.highlight": { en: "free forever", es: "gratis para siempre" },
+  "early.headline.highlight": { en: "free", es: "gratis" },
   "early.urgency": { en: "Don't think about it too long. When spots run out, the price goes up.", es: "No lo pienses demasiado. Cuando se acaben los cupos, el precio sube." },
   "early.stat1": { en: "spots taken", es: "cupos tomados" },
   "early.stat2": { en: "free spots left", es: "lugares gratis restantes" },
