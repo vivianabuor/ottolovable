@@ -30,9 +30,11 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/80">
-              {t("pricing.free.cta")}
-            </Button>
+            <a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                {t("pricing.free.cta")}
+              </Button>
+            </a>
           </div>
         </div>
       </div>
