@@ -1,9 +1,14 @@
 
-## Plan: Simplify Pricing to Free-only
 
-Remove the Pro plan from the Pricing section, keeping only the Free tier. Center the single card.
+## Plan: Link All CTA Buttons to WhatsApp
+
+Three CTA buttons are missing the WhatsApp link (`https://wa.me/15556422389`):
 
 ### Changes
 
-1. **`src/components/Pricing.tsx`** — Remove the Pro plan from the `plans` array, change the grid to single-column centered layout, remove the "popular" badge logic
-2. **`src/contexts/LanguageContext.tsx`** — No changes needed (unused keys are harmless)
+1. **`src/components/Navbar.tsx`** — Wrap both desktop and mobile "Get Otto" buttons in `<a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer">` (lines 45-47 and 76-78)
+
+2. **`src/components/Pricing.tsx`** — Wrap the free plan CTA button in `<a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer">` (line 33-35)
+
+Hero and EarlyAccess already have the correct link — no changes needed there.
+
