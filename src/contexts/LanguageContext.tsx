@@ -72,7 +72,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "faq.q3": { en: "Is my data safe?", es: "¿Mis datos están seguros?" },
   "faq.a3": { en: "Absolutely. We use end-to-end. Your data is yours.", es: "Absolutamente. Usamos cifrado de extremo a extremo y nunca almacenamos tus mensajes. Tus datos son tuyos." },
   "faq.q4": { en: "Can I customize what Otto sends me?", es: "¿Puedo personalizar lo que Otto me envía?" },
-  "faq.a4": { en: "Yes! Just tell Otto what you care about and it adapts. You can adjust anytime via chat.", es: "¡Sí! Solo dile a Otto qué te interesa y se adapta. Puedes ajustar en cualquier momento por chat." },
+  "faq.a4": { en: "Yes! Just tell Otto what you care about and it adapts.", es: "¡Sí! Solo dile a Otto qué te interesa y se adapta. Puedes ajustar en cualquier momento por chat." },
 
   // Early Access
   "early.quote": { en: "Imagine waking up and someone brilliant already checked everything for you. That's oπo.", es: "Imagina despertar y que alguien brillante ya revisó todo por ti. Eso es oπo." },
