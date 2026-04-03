@@ -96,8 +96,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "mock.greeting": { en: "Good morning! ☀️ Here's your briefing for today:", es: "¡Buenos días! ☀️ Aquí está tu briefing de hoy:" },
   "mock.weather": { en: "🌤 Weather: 24°C, partly cloudy. Rain at 3 PM — bring an umbrella!", es: "🌤 Clima: 24°C, parcialmente nublado. Lluvia a las 3 PM — ¡lleva paraguas!" },
   "mock.traffic": { en: "🚗 Traffic: 35 min to office. Take Av. Reforma — 10 min faster today.", es: "🚗 Tráfico: 35 min a la oficina. Toma Av. Reforma — 10 min más rápido hoy." },
-  "mock.calendar": { en: "📅 Calendar: Team standup at 9 AM, lunch with María at 1 PM, dentist at 5 PM.", es: "📅 Calendario: Standup a las 9 AM, almuerzo con María a la 1 PM, dentista a las 5 PM." },
-  "mock.finances": { en: "💰 Finances: You've spent $42 today. Monthly budget at 68%.", es: "💰 Finanzas: Has gastado $42 hoy. Presupuesto mensual al 68%." },
+  "mock.calendar": { en: "📅 Calendar:\n20:00 — Dinner with friends\n20:30 — Daily Product Team (Medellín)\n21:30 — Family call", es: "📅 Calendario:\n20:00 — Cena con amigos\n20:30 — Daily Product Team (Medellín)\n21:30 — Llamada familiar" },
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
