@@ -1,27 +1,16 @@
 
 
-## Plan: Add Dynamic Animations
+## Plan: Animate Stats Numbers with Count-Up Effect
 
-### 1. HowItWorks — Scroll-triggered staggered reveal
+Add a scroll-triggered counting animation to the stats (87, 413, ∞) in the EarlyAccess section.
 
-Use Intersection Observer to animate each step card when it scrolls into view, with a staggered delay per card.
+### Changes
 
-**`src/components/HowItWorks.tsx`**:
-- Add a `useRef` + `useEffect` with `IntersectionObserver` on the grid container
-- Each card starts with `opacity-0 translate-y-8` and transitions to `opacity-100 translate-y-0` when visible
-- Stagger: card 0 = 0ms, card 1 = 200ms, card 2 = 400ms
-- Add a subtle scale effect on entrance (`scale-95` → `scale-100`)
+**`src/components/EarlyAccess.tsx`**:
+- Add `useRef`, `useState`, `useEffect` for an `IntersectionObserver` on the stats grid
+- Create a `CountUp` helper component that animates from 0 to the target number over ~1.5s using `requestAnimationFrame`
+- Apply to 87 and 413; for ∞, fade it in with a scale effect after the number animations complete
+- Each stat staggers slightly (0ms, 300ms, 600ms)
 
-### 2. WhatsApp Mockup — Sequential chat message appearance
-
-Make messages appear one-by-one with realistic typing delays, triggered when the mockup scrolls into view.
-
-**`src/components/WhatsAppMockup.tsx`**:
-- Use `useState` to track how many messages are visible (0→4)
-- Use `IntersectionObserver` to start the sequence when the mockup enters the viewport
-- Each message appears after a delay (e.g., 0.8s, 1.6s, 2.4s, 3.2s) with a fade+slide-up animation
-- Add a small "typing..." indicator bubble that appears before each message and disappears when the message shows
-- Only render `ChatBubble` components for indices below the visible count
-
-### No other files need changes — all animation is CSS transitions + React state.
+No other files need changes.
 
