@@ -25,7 +25,6 @@ const WhatsAppMockup = () => {
           <ChatBubble text={t("mock.weather")} delay={1} />
           <ChatBubble text={t("mock.traffic")} delay={2} />
           <ChatBubble text={t("mock.calendar")} delay={3} />
-          <ChatBubble text={t("mock.finances")} delay={4} />
         </div>
       </div>
     </div>
@@ -34,7 +33,7 @@ const WhatsAppMockup = () => {
 
 const ChatBubble = ({ text, delay }: { text: string; delay: number }) => (
   <div
-    className="fade-in-up max-w-[85%] rounded-lg rounded-tl-sm bg-[hsl(152_30%_18%)] px-3 py-2 text-[11px] leading-relaxed text-white/90"
+    className="fade-in-up max-w-[85%] rounded-lg rounded-tl-sm bg-[hsl(152_30%_18%)] px-3 py-2 text-[11px] leading-relaxed text-white/90 whitespace-pre-line"
     style={{ animationDelay: `${0.3 + delay * 0.15}s` }}
   >
     {text}
