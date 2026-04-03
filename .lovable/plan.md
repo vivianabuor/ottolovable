@@ -1,14 +1,14 @@
 
 
-## Plan: Link All CTA Buttons to WhatsApp
-
-Three CTA buttons are missing the WhatsApp link (`https://wa.me/15556422389`):
+## Plan: Update WhatsApp Mockup Bubbles
 
 ### Changes
 
-1. **`src/components/Navbar.tsx`** — Wrap both desktop and mobile "Get Otto" buttons in `<a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer">` (lines 45-47 and 76-78)
+1. **`src/components/WhatsAppMockup.tsx`** — Remove the finances bubble (line 28)
 
-2. **`src/components/Pricing.tsx`** — Wrap the free plan CTA button in `<a href="https://wa.me/15556422389" target="_blank" rel="noopener noreferrer">` (line 33-35)
+2. **`src/contexts/LanguageContext.tsx`** — Update the `mock.calendar` translations:
+   - **EN**: `"📅 Calendar:\n20:00 — Dinner with friends\n20:30 — Daily Product Team (Medellín)\n21:30 — Family call"`
+   - **ES**: `"📅 Calendario:\n20:00 — Cena con amigos\n20:30 — Daily Product Team (Medellín)\n21:30 — Llamada familiar"`
 
-Hero and EarlyAccess already have the correct link — no changes needed there.
+3. **`src/components/WhatsAppMockup.tsx`** — Update the `ChatBubble` component to render `\n` as line breaks using `whitespace-pre-line` CSS or splitting on newlines.
 
