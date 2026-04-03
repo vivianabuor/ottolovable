@@ -38,11 +38,11 @@ const EarlyAccess = () => {
           {/* Stats Row */}
           <div className="grid grid-cols-3 gap-6 max-w-lg mx-auto py-4">
             <div>
-              <p className="text-3xl sm:text-4xl font-bold text-gray-900">391</p>
+              <p className="text-3xl sm:text-4xl font-bold text-gray-900">87</p>
               <p className="text-sm text-gray-500 mt-1">{t("early.stat1")}</p>
             </div>
             <div>
-              <p className="text-3xl sm:text-4xl font-bold text-gray-900">109</p>
+              <p className="text-3xl sm:text-4xl font-bold text-gray-900">413</p>
               <p className="text-sm text-gray-500 mt-1">{t("early.stat2")}</p>
             </div>
             <div>
