@@ -1,14 +1,27 @@
 
 
-## Plan: Update WhatsApp Mockup Bubbles
+## Plan: Add Dynamic Animations
 
-### Changes
+### 1. HowItWorks — Scroll-triggered staggered reveal
 
-1. **`src/components/WhatsAppMockup.tsx`** — Remove the finances bubble (line 28)
+Use Intersection Observer to animate each step card when it scrolls into view, with a staggered delay per card.
 
-2. **`src/contexts/LanguageContext.tsx`** — Update the `mock.calendar` translations:
-   - **EN**: `"📅 Calendar:\n20:00 — Dinner with friends\n20:30 — Daily Product Team (Medellín)\n21:30 — Family call"`
-   - **ES**: `"📅 Calendario:\n20:00 — Cena con amigos\n20:30 — Daily Product Team (Medellín)\n21:30 — Llamada familiar"`
+**`src/components/HowItWorks.tsx`**:
+- Add a `useRef` + `useEffect` with `IntersectionObserver` on the grid container
+- Each card starts with `opacity-0 translate-y-8` and transitions to `opacity-100 translate-y-0` when visible
+- Stagger: card 0 = 0ms, card 1 = 200ms, card 2 = 400ms
+- Add a subtle scale effect on entrance (`scale-95` → `scale-100`)
 
-3. **`src/components/WhatsAppMockup.tsx`** — Update the `ChatBubble` component to render `\n` as line breaks using `whitespace-pre-line` CSS or splitting on newlines.
+### 2. WhatsApp Mockup — Sequential chat message appearance
+
+Make messages appear one-by-one with realistic typing delays, triggered when the mockup scrolls into view.
+
+**`src/components/WhatsAppMockup.tsx`**:
+- Use `useState` to track how many messages are visible (0→4)
+- Use `IntersectionObserver` to start the sequence when the mockup enters the viewport
+- Each message appears after a delay (e.g., 0.8s, 1.6s, 2.4s, 3.2s) with a fade+slide-up animation
+- Add a small "typing..." indicator bubble that appears before each message and disappears when the message shows
+- Only render `ChatBubble` components for indices below the visible count
+
+### No other files need changes — all animation is CSS transitions + React state.
 
