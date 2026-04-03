@@ -41,7 +41,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "features.calendar.title": { en: "Calendar", es: "Calendario" },
   "features.calendar.desc": { en: "Meetings, deadlines, birthdays. All in your morning message.", es: "Reuniones, plazos, cumpleaños. Todo en tu mensaje matutino." },
   "features.finances.title": { en: "Finances", es: "Finanzas" },
-  "features.finances.desc": { en: "Daily spending snapshot and alerts so you stay on budget.", es: "Resumen diario de gastos y alertas para mantenerte en presupuesto." },
+  "features.finances.desc": { en: "Ask for a snapshot of your spending and stay on budget.", es: "Resumen diario de gastos y alertas para mantenerte en presupuesto." },
 
   // Pricing
   "pricing.title": { en: "Simple pricing", es: "Precios simples" },
