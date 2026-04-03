@@ -25,7 +25,6 @@ const WhatsAppMockup = () => {
           <ChatBubble text={t("mock.weather")} delay={1} />
           <ChatBubble text={t("mock.traffic")} delay={2} />
           <ChatBubble text={t("mock.calendar")} delay={3} />
-          <ChatBubble text={t("mock.finances")} delay={4} />
         </div>
       </div>
     </div>
